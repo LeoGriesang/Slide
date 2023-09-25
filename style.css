@@ -17,9 +17,20 @@ img {
 .slide {
     display: flex;
 }
+.slide:hover {
+    will-change: transform;
+}
 .slide li {
     flex-shrink: 0;
     width: 80vw;
     max-width: 800px;
     margin: 0px 20px;
+    border-radius: 5px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+}
+.slide li.ativo {
+    opacity: 1;
+    transform: scale(1);
 }
